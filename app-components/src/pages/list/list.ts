@@ -11,9 +11,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-list',
-  templateUrl: 'list.html',
+  templateUrl: 'list.html'
 })
 export class ListPage {
+
+  courses = [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Angular',
+      'Node.js',
+      'Ionic'
+  ];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

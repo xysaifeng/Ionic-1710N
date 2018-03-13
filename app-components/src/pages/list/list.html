@@ -126,4 +126,9 @@
             </ion-item-options>
         </ion-item-sliding>
     </ion-list>
+
+    <p>数据来自于控制器</p>
+    <ion-list *ngFor="let course of courses" no-lines>
+        <button ion-item>{{course}}</button>
+    </ion-list>
 </ion-content>
