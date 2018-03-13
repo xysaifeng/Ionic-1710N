@@ -102,5 +102,16 @@ Ionic
 		a. 创建一个 button
 		b. 为 button 做属性绑定
 		   [navPush]="buttonPage"
-13. List
+
+13. ionic serve -l 启动后报错，网络问题
+	解决方式：ionic serve
+
+14. List 列表
+	14.1 创建了 list 新页面，并且从 HomePage 跳向 ListPage
+	14.2 基本列表
+	14.3 按钮作为列表项
+	14.4 列表边距
+	14.5 无分割线列表
+	14.6 列表分隔项
+	14.7 列表头部
 			
