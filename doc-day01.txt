@@ -83,5 +83,6 @@ Ionic
 	9.8 按钮大小
 	9.9 图标按钮
 
-10.
+10. Ionic 创建新的页面，在 app-components/ 下执行命令：
+    ionic g page button
 			
