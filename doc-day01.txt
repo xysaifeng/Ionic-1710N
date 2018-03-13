@@ -1,0 +1,74 @@
+WEBAPP
+
+Ionic
+
+一、基本介绍
+
+1. WEBAPP = WEB + APP (Application 应用程序)
+   使用 WEB 技术开发移动设备的应用程序
+2. 开发移动设备的应用程序
+	2.1 Native 原生开发
+	    Android Java Android studio
+	    iOS Objective-C Xcode
+	2.2 移动适配网站，m 站
+	2.3 React Native
+	2.4 Ionic 
+
+3. WEB 技术
+	3.1 HTML
+	3.2 CSS
+	3.3 JavaScript
+	3.4 Angular
+	3.5 TypeScript
+	3.6 Ionic API
+
+4. Ionic 
+	4.1 https://ionicframework.com/
+
+5. Build amazing apps in one codebase, for any platform, with the web.
+	5.1 WEB 技术
+	5.2 天生跨平台
+	5.3 Components 组件，样式风格贴近于原生
+	5.4 社区支持好
+	5.5 强大的 CLI 命令行工具
+
+6. 环境配置
+	6.1 升级 Node.js 为最新版本 (V8+)
+	    卸载 Node.js
+	    安装 Node.js
+	6.2 Node.js 安装的第三方全局模块
+	    npm i -g <第三方模块>
+	    位置：C:/Users/用户名/AppData/Roaming/npm/node_module
+	    注意：AppData 是隐藏目录
+	6.3 有网络：cmd 执行命令：
+	    npm i -g ionic cordova
+	6.4 无网络：
+		a. 删除原有的 ionic cordova
+		b. 解压缩 npm.zip
+		c. 复制 ionic ionic.cmd cordova cordova.cmd 到 .../npm/ 下
+		d. 复制 ionic 和 cordova 目录到 .../node_modules/ 下
+		e. 验证：
+		   新开 cmd：
+		   		ionic -v 3.19.1
+			    cordova -v 8.0.0
+
+7. 命令行程序的执行：
+	7.1 命令的作用是什么
+	7.2 命名在哪里执行
+	7.3 命令的具体写法
+    7.4 命令的结果
+
+7. Ionic Hello world
+	7.1 创建项目 Ionic-1710N
+	7.2 在 Ionic-1710N/ 下执行 cmd：ionic start app-components blank
+	7.3 无网络：解压缩 app-components.zip 到 Ionic-1710N/ 下
+	7.4 运行，app-components/ 执行命令: ionic serve -l
+
+8. Ionic 在代码更新后，自动编译，刷新浏览器页面（注意：这个特性不稳定）
+   需要重启：app-components/ 下
+   命令行执行 Ctrl + C 关闭当前服务
+             ionic serve -l 启动 (l:lab)
+
+二、Ionic 的基本 UI 组件
+9. Button 按钮
+			
