@@ -33,9 +33,11 @@ Ionic
 	5.5 强大的 CLI 命令行工具
 
 6. 环境配置
-	6.1 升级 Node.js 为最新版本 (V8+)
+	6.1 升级 Node.js 为最新版本 (V8.10.0)
 	    卸载 Node.js
 	    安装 Node.js
+	    验证 node -v
+	        npm -v
 	6.2 Node.js 安装的第三方全局模块
 	    npm i -g <第三方模块>
 	    位置：C:/Users/用户名/AppData/Roaming/npm/node_module
@@ -71,4 +73,15 @@ Ionic
 
 二、Ionic 的基本 UI 组件
 9. Button 按钮
+	9.1 <button ion-button>default button</button>
+	9.2 按钮背景
+	9.3 外边框
+	9.4 无边框
+	9.5 圆角
+	9.6 有圆角块级
+	9.7 无圆角块级
+	9.8 按钮大小
+	9.9 图标按钮
+
+10.
 			
