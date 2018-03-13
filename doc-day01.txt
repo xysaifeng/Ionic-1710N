@@ -130,3 +130,11 @@ Ionic
 	}
 
 	npm [run] start
+
+16. Card 卡片
+	16.1 创建新的页面 card，从 HomePage 跳转到 CardPage
+	16.2 基本卡片
+	16.3 卡片内容为列表
+	16.4 图片卡片
+
+	-17:35
