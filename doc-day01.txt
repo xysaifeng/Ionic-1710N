@@ -2,19 +2,19 @@ WEBAPP
 
 Ionic
 
-Ò»¡¢»ù±¾½éÉÜ
+ä¸€ã€åŸºæœ¬ä»‹ç»
 
-1. WEBAPP = WEB + APP (Application Ó¦ÓÃ³ÌĞò)
-   Ê¹ÓÃ WEB ¼¼Êõ¿ª·¢ÒÆ¶¯Éè±¸µÄÓ¦ÓÃ³ÌĞò
-2. ¿ª·¢ÒÆ¶¯Éè±¸µÄÓ¦ÓÃ³ÌĞò
-	2.1 Native Ô­Éú¿ª·¢
+1. WEBAPP = WEB + APP (Application åº”ç”¨ç¨‹åº)
+   ä½¿ç”¨ WEB æŠ€æœ¯å¼€å‘ç§»åŠ¨è®¾å¤‡çš„åº”ç”¨ç¨‹åº
+2. å¼€å‘ç§»åŠ¨è®¾å¤‡çš„åº”ç”¨ç¨‹åº
+	2.1 Native åŸç”Ÿå¼€å‘
 	    Android Java Android studio
 	    iOS Objective-C Xcode
-	2.2 ÒÆ¶¯ÊÊÅäÍøÕ¾£¬m Õ¾
+	2.2 ç§»åŠ¨é€‚é…ç½‘ç«™ï¼Œm ç«™
 	2.3 React Native
 	2.4 Ionic 
 
-3. WEB ¼¼Êõ
+3. WEB æŠ€æœ¯
 	3.1 HTML
 	3.2 CSS
 	3.3 JavaScript
@@ -26,93 +26,94 @@ Ionic
 	4.1 https://ionicframework.com/
 
 5. Build amazing apps in one codebase, for any platform, with the web.
-	5.1 WEB ¼¼Êõ
-	5.2 ÌìÉú¿çÆ½Ì¨
-	5.3 Components ×é¼ş£¬ÑùÊ½·ç¸ñÌù½üÓÚÔ­Éú
-	5.4 ÉçÇøÖ§³ÖºÃ
-	5.5 Ç¿´óµÄ CLI ÃüÁîĞĞ¹¤¾ß
+	5.1 WEB æŠ€æœ¯
+	5.2 å¤©ç”Ÿè·¨å¹³å°
+	5.3 Components ç»„ä»¶ï¼Œæ ·å¼é£æ ¼è´´è¿‘äºåŸç”Ÿ
+	5.4 ç¤¾åŒºæ”¯æŒå¥½
+	5.5 å¼ºå¤§çš„ CLI å‘½ä»¤è¡Œå·¥å…·
 
-6. »·¾³ÅäÖÃ
-	6.1 Éı¼¶ Node.js Îª×îĞÂ°æ±¾ (V8.10.0)
-	    Ğ¶ÔØ Node.js
-	    °²×° Node.js
-	    ÑéÖ¤ node -v
+6. ç¯å¢ƒé…ç½®
+	6.1 å‡çº§ Node.js ä¸ºæœ€æ–°ç‰ˆæœ¬ (V8.10.0)
+	    å¸è½½ Node.js
+	    å®‰è£… Node.js
+	    éªŒè¯ node -v
 	        npm -v
-	6.2 Node.js °²×°µÄµÚÈı·½È«¾ÖÄ£¿é
-	    npm i -g <µÚÈı·½Ä£¿é>
-	    Î»ÖÃ£ºC:/Users/ÓÃ»§Ãû/AppData/Roaming/npm/node_module
-	    ×¢Òâ£ºAppData ÊÇÒş²ØÄ¿Â¼
-	6.3 ÓĞÍøÂç£ºcmd Ö´ĞĞÃüÁî£º
+	6.2 Node.js å®‰è£…çš„ç¬¬ä¸‰æ–¹å…¨å±€æ¨¡å—
+	    npm i -g <ç¬¬ä¸‰æ–¹æ¨¡å—>
+	    ä½ç½®ï¼šC:/Users/ç”¨æˆ·å/AppData/Roaming/npm/node_module
+	    æ³¨æ„ï¼šAppData æ˜¯éšè—ç›®å½•
+	6.3 æœ‰ç½‘ç»œï¼šcmd æ‰§è¡Œå‘½ä»¤ï¼š
 	    npm i -g ionic cordova
-	6.4 ÎŞÍøÂç£º
-		a. É¾³ıÔ­ÓĞµÄ ionic cordova
-		b. ½âÑ¹Ëõ npm.zip
-		c. ¸´ÖÆ ionic ionic.cmd cordova cordova.cmd µ½ .../npm/ ÏÂ
-		d. ¸´ÖÆ ionic ºÍ cordova Ä¿Â¼µ½ .../node_modules/ ÏÂ
-		e. ÑéÖ¤£º
-		   ĞÂ¿ª cmd£º
+	6.4 æ— ç½‘ç»œï¼š
+		a. åˆ é™¤åŸæœ‰çš„ ionic cordova
+		b. è§£å‹ç¼© npm.zip
+		c. å¤åˆ¶ ionic ionic.cmd cordova cordova.cmd åˆ° .../npm/ ä¸‹
+		d. å¤åˆ¶ ionic å’Œ cordova ç›®å½•åˆ° .../node_modules/ ä¸‹
+		e. éªŒè¯ï¼š
+		   æ–°å¼€ cmdï¼š
 		   		ionic -v 3.19.1
 			    cordova -v 8.0.0
 
-7. ÃüÁîĞĞ³ÌĞòµÄÖ´ĞĞ£º
-	7.1 ÃüÁîµÄ×÷ÓÃÊÇÊ²Ã´
-	7.2 ÃüÃûÔÚÄÄÀïÖ´ĞĞ
-	7.3 ÃüÁîµÄ¾ßÌåĞ´·¨
-    7.4 ÃüÁîµÄ½á¹û
+7. å‘½ä»¤è¡Œç¨‹åºçš„æ‰§è¡Œï¼š
+	7.1 å‘½ä»¤çš„ä½œç”¨æ˜¯ä»€ä¹ˆ
+	7.2 å‘½ååœ¨å“ªé‡Œæ‰§è¡Œ
+	7.3 å‘½ä»¤çš„å…·ä½“å†™æ³•
+    7.4 å‘½ä»¤çš„ç»“æœ
 
 8. Ionic Hello world
-	8.1 ´´½¨ÏîÄ¿ Ionic-1710N
-	8.2 ÔÚ Ionic-1710N/ ÏÂÖ´ĞĞ cmd£ºionic start app-components blank
-	8.3 ÎŞÍøÂç£º½âÑ¹Ëõ app-components.zip µ½ Ionic-1710N/ ÏÂ
-	8.4 ÔËĞĞ£¬app-components/ Ö´ĞĞÃüÁî: ionic serve -l
+	8.1 åˆ›å»ºé¡¹ç›® Ionic-1710N
+	8.2 åœ¨ Ionic-1710N/ ä¸‹æ‰§è¡Œ cmdï¼šionic start app-components blank
+	8.3 æ— ç½‘ç»œï¼šè§£å‹ç¼© app-components.zip åˆ° Ionic-1710N/ ä¸‹
+	8.4 è¿è¡Œï¼Œapp-components/ æ‰§è¡Œå‘½ä»¤: ionic serve -l
 
-9. Ionic ÔÚ´úÂë¸üĞÂºó£¬×Ô¶¯±àÒë£¬Ë¢ĞÂä¯ÀÀÆ÷Ò³Ãæ£¨×¢Òâ£ºÕâ¸öÌØĞÔ²»ÎÈ¶¨£©
-   ĞèÒªÖØÆô£ºapp-components/ ÏÂ
-   ÃüÁîĞĞÖ´ĞĞ Ctrl + C ¹Ø±Õµ±Ç°·şÎñ
-             ionic serve -l Æô¶¯ (l:lab)
+9. Ionic åœ¨ä»£ç æ›´æ–°åï¼Œè‡ªåŠ¨ç¼–è¯‘ï¼Œåˆ·æ–°æµè§ˆå™¨é¡µé¢ï¼ˆæ³¨æ„ï¼šè¿™ä¸ªç‰¹æ€§ä¸ç¨³å®šï¼‰
+   éœ€è¦é‡å¯ï¼šapp-components/ ä¸‹
+   å‘½ä»¤è¡Œæ‰§è¡Œ Ctrl + C å…³é—­å½“å‰æœåŠ¡
+             ionic serve -l å¯åŠ¨ (l:lab)
 
-¶ş¡¢Ionic µÄ»ù±¾ UI ×é¼ş
-10. Button °´Å¥
+äºŒã€Ionic çš„åŸºæœ¬ UI ç»„ä»¶
+10. Button æŒ‰é’®
 	10.1 <button ion-button>default button</button>
-	10.2 °´Å¥±³¾°
-	10.3 Íâ±ß¿ò
-	10.4 ÎŞ±ß¿ò
-	10.5 Ô²½Ç
-	10.6 ÓĞÔ²½Ç¿é¼¶
-	10.7 ÎŞÔ²½Ç¿é¼¶
-	10.8 °´Å¥´óĞ¡
-	10.10 Í¼±ê°´Å¥
+	10.2 æŒ‰é’®èƒŒæ™¯
+	10.3 å¤–è¾¹æ¡†
+	10.4 æ— è¾¹æ¡†
+	10.5 åœ†è§’
+	10.6 æœ‰åœ†è§’å—çº§
+	10.7 æ— åœ†è§’å—çº§
+	10.8 æŒ‰é’®å¤§å°
+	10.10 å›¾æ ‡æŒ‰é’®
 
-11. Ionic ´´½¨ĞÂµÄÒ³Ãæ£¬ÔÚ app-components/ ÏÂÖ´ĞĞÃüÁî£º
+11. Ionic åˆ›å»ºæ–°çš„é¡µé¢ï¼Œåœ¨ app-components/ ä¸‹æ‰§è¡Œå‘½ä»¤ï¼š
     ionic g page button
 
-12. Ionic µÄÒ³ÃæÌø×ª
-    12.1 ĞŞ¸Ä src/app/app.module.ts ÎÄ¼ş£¬×¢²áĞÂÒ³Ãæ
-    	a. ÒıÈëĞÂ´´½¨µÄÒ³Ãæ
+12. Ionic çš„é¡µé¢è·³è½¬
+    12.1 ä¿®æ”¹ src/app/app.module.ts æ–‡ä»¶ï¼Œæ³¨å†Œæ–°é¡µé¢
+    	a. å¼•å…¥æ–°åˆ›å»ºçš„é¡µé¢
     	   import {ButtonPage} from '../pages/button/button';
-    	b. ÔÚ declaration Êı×éÀï£¬Ìí¼ÓÔªËØ ButtonPage
-    	c. ÔÚ entryComponents Êı×éÀï£¬Ìí¼ÓÔªËØ ButtonPage
-	12.2 ĞŞ¸Ä src/pages/home/home.ts ÎÄ¼ş
-		a. ÒıÈëĞÂ´´½¨µÄÒ³Ãæ
+    	b. åœ¨ declaration æ•°ç»„é‡Œï¼Œæ·»åŠ å…ƒç´  ButtonPage
+    	c. åœ¨ entryComponents æ•°ç»„é‡Œï¼Œæ·»åŠ å…ƒç´  ButtonPage
+	12.2 ä¿®æ”¹ src/pages/home/home.ts æ–‡ä»¶
+		a. å¼•å…¥æ–°åˆ›å»ºçš„é¡µé¢
 		   import {ButtonPage} from '../button/button'
-		b. ¶¨ÒåÀàÊôĞÔ£ºbuttonPage;
-		c. ÔÚ¹¹ÔìÆ÷ÖĞ³õÊ¼»¯ buttonPage
+		b. å®šä¹‰ç±»å±æ€§ï¼šbuttonPage;
+		c. åœ¨æ„é€ å™¨ä¸­åˆå§‹åŒ– buttonPage
 		   this.buttonPage = ButtonPage;
-	12.3 ĞŞ¸Ä src/pages/home/home.html ÎÄ¼ş
-		a. ´´½¨Ò»¸ö button
-		b. Îª button ×öÊôĞÔ°ó¶¨
+	12.3 ä¿®æ”¹ src/pages/home/home.html æ–‡ä»¶
+		a. åˆ›å»ºä¸€ä¸ª button
+		b. ä¸º button åšå±æ€§ç»‘å®š
 		   [navPush]="buttonPage"
 
-13. ionic serve -l Æô¶¯ºó±¨´í£¬ÍøÂçÎÊÌâ
-	½â¾ö·½Ê½£ºionic serve
+13. ionic serve -l å¯åŠ¨åæŠ¥é”™ï¼Œç½‘ç»œé—®é¢˜
+	è§£å†³æ–¹å¼ï¼šionic serve
 
-14. List ÁĞ±í
-	14.1 ´´½¨ÁË list ĞÂÒ³Ãæ£¬²¢ÇÒ´Ó HomePage ÌøÏò ListPage
-	14.2 »ù±¾ÁĞ±í
-	14.3 °´Å¥×÷ÎªÁĞ±íÏî
-	14.4 ÁĞ±í±ß¾à
-	14.5 ÎŞ·Ö¸îÏßÁĞ±í
-	14.6 ÁĞ±í·Ö¸ôÏî
-	14.7 ÁĞ±íÍ·²¿
-	14.8 Í¼±ê×÷ÎªÁĞ±íÏî
-	14.9 Í·Ïñ×÷ÎªÁĞ±íÏî
+14. List åˆ—è¡¨
+	14.1 åˆ›å»ºäº† list æ–°é¡µé¢ï¼Œå¹¶ä¸”ä» HomePage è·³å‘ ListPage
+	14.2 åŸºæœ¬åˆ—è¡¨
+	14.3 æŒ‰é’®ä½œä¸ºåˆ—è¡¨é¡¹
+	14.4 åˆ—è¡¨è¾¹è·
+	14.5 æ— åˆ†å‰²çº¿åˆ—è¡¨
+	14.6 åˆ—è¡¨åˆ†éš”é¡¹
+	14.7 åˆ—è¡¨å¤´éƒ¨
+	14.8 å›¾æ ‡ä½œä¸ºåˆ—è¡¨é¡¹
+	14.9 å¤´åƒä½œä¸ºåˆ—è¡¨é¡¹
+	14.10 æ»‘åŠ¨åˆ—è¡¨é¡¹
