@@ -10,25 +10,29 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-list',
-  templateUrl: 'list.html'
+    selector: 'page-list',
+    templateUrl: 'list.html'
 })
 export class ListPage {
 
-  courses = [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'Angular',
-      'Node.js',
-      'Ionic'
-  ];
+    courses = [
+        'HTML',
+        'CSS',
+        'JavaScript',
+        'Angular',
+        'Node.js',
+        'Ionic'
+    ];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    constructor(public navCtrl:NavController, public navParams:NavParams) {
+    }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ListPage');
-  }
+    ionViewDidLoad() {
+        console.log('ionViewDidLoad ListPage');
+    }
+
+    selectCourse(course:string) {
+        console.log(course);
+    }
 
 }

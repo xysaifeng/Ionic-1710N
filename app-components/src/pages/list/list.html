@@ -128,7 +128,7 @@
     </ion-list>
 
     <p>数据来自于控制器</p>
-    <ion-list *ngFor="let course of courses" no-lines>
+    <ion-list *ngFor="let course of courses" (click)="selectCourse(course)" no-lines>
         <button ion-item>{{course}}</button>
     </ion-list>
 </ion-content>

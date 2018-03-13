@@ -121,4 +121,12 @@ Ionic
 		a. 在 list.ts 文件中，添加一些样本数据
 		b. 在列表中做循环 *ngFor="let course of courses"
 		c. 插值 {{course}}
-		d.
+		d. 事件响应，事件绑定，定义函数
+
+15. 修改 package.json 文件，添加 Ionic 的启动命令
+	"scripts": {
+		...,
+		"start": "ionic serve -l"
+	}
+
+	npm [run] start
