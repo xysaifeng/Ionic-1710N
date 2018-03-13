@@ -143,3 +143,6 @@ Ionic
 	17.3 press
 	17.4 pan
 	17.5 swipe
+
+练习：页面 A 内部实现一个滑动列表，点击滑动列表中 item-options 跳向页面 B，
+B 页面内实现一个图片卡片
