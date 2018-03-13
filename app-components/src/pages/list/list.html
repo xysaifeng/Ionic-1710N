@@ -55,4 +55,33 @@
         <ion-item>Jerry</ion-item>
     </ion-list>
 
+    <p>图标作为列表项</p>
+    <ion-list>
+        <ion-item>
+            <ion-icon name="heart" item-start color="danger"></ion-icon>
+            Tom
+        </ion-item>
+        <ion-item>
+            <ion-icon name="heart" item-end color="danger"></ion-icon>
+            Jerry
+        </ion-item>
+    </ion-list>
+    
+    <p>头像作为列表项</p>
+    <ion-list>
+        <ion-item>
+            <ion-avatar item-start>
+                <img src="assets/avatars/test.png"/>
+            </ion-avatar>
+            <h2>Tom</h2>
+            <p>Tom is a student.</p>
+        </ion-item>
+        <ion-item>
+            <ion-avatar item-end>
+                <img src="assets/avatars/test.png"/>
+            </ion-avatar>
+            <h2>Jerry</h2>
+            <p>The world is your oyster!</p>
+        </ion-item>
+    </ion-list>
 </ion-content>
