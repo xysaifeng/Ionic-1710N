@@ -14,5 +14,15 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button (tap)='signIn()' ion-button block color="danger">Sign in</button>
 </ion-content>

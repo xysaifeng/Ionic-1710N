@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams, ToastController} from 'ionic-angular';
 
 /**
  * Generated class for the SignInPage page.
@@ -15,11 +15,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SignInPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              private toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignInPage');
   }
 
+  signIn():void {
+    // todo get email password
+    // todo send HTTP request
+    // todo server: sql = 'select...from...where...';
+    // todo response
+    this.toastCtrl.create({
+      message: 'Invalid Email or password.',
+      duration: 1000
+    }).present();
+  }
 }

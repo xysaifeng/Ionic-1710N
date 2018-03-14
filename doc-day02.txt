@@ -47,3 +47,12 @@ Ionic Day02
 6. 练习：创建一个用户登录页面 signIn
          页面内实现一个登录表单，Email 和 Password
          点击提交按钮显示消息提示：Invalid Email or password.
+
+7. alert 提示框
+    7.1 创建 alert，从 HomePage 跳向 AlertPage
+    7.2 在 alert.html 中，创建按钮，绑定 tap 事件
+    7.3 在 alert.ts 中，定义函数 basicAlert();
+    7.4 引入 AlertController
+    7.5 DI 依赖注入 AlertController
+    7.6 在 basicAlert 中，创建 alert 实例
+    7.7 alert.present()，显示警告框

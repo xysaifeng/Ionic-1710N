@@ -17,6 +17,7 @@ import {GridPage} from '../pages/grid/grid';
 import {FormPage} from '../pages/form/form';
 import {ToastPage} from "../pages/toast/toast";
 import {SignInPage} from "../pages/sign-in/sign-in";
+import {AlertPage} from "../pages/alert/alert";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {SignInPage} from "../pages/sign-in/sign-in";
     GridPage,
     FormPage,
     ToastPage,
-    SignInPage
+    SignInPage,
+    AlertPage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ import {SignInPage} from "../pages/sign-in/sign-in";
     GridPage,
     FormPage,
     ToastPage,
-    SignInPage
+    SignInPage,
+    AlertPage
   ],
   providers: [
     StatusBar,
