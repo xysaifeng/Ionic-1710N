@@ -22,3 +22,6 @@ Ionic Day02
    3.4 自动宽度
    3.5 列偏移
    3.6 垂直对齐
+
+4. form 表单
+   4.1 创建 form，从 HomePage 跳向 FormPage

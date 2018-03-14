@@ -14,6 +14,7 @@ import {APage} from '../pages/a/a';
 import {BPage} from '../pages/b/b';
 import {FabPage} from '../pages/fab/fab';
 import {GridPage} from '../pages/grid/grid';
+import {FormPage} from '../pages/form/form';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,8 @@ import {GridPage} from '../pages/grid/grid';
         APage,
         BPage,
         FabPage,
-        GridPage
+        GridPage,
+        FormPage
     ],
     imports: [
         BrowserModule,
@@ -43,7 +45,8 @@ import {GridPage} from '../pages/grid/grid';
         APage,
         BPage,
         FabPage,
-        GridPage
+        GridPage,
+        FormPage
     ],
     providers: [
         StatusBar,

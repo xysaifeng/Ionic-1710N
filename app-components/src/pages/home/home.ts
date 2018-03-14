@@ -7,6 +7,7 @@ import {GesturePage} from '../gesture/gesture';
 import {APage} from '../a/a';
 import {FabPage} from '../fab/fab';
 import {GridPage} from '../grid/grid';
+import {FormPage} from '../form/form';
 
 @Component({
   selector: 'page-home',
@@ -21,6 +22,7 @@ export class HomePage {
   aPage;
   fabPage;
   gridPage;
+  formPage;
 
   constructor(public navCtrl: NavController) {
     this.buttonPage = ButtonPage;
@@ -30,6 +32,7 @@ export class HomePage {
     this.aPage = APage;
     this.fabPage = FabPage;
     this.gridPage = GridPage;
+    this.formPage = FormPage;
   }
 
 }
