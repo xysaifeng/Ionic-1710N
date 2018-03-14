@@ -80,3 +80,20 @@ Ionic Day02
 13. Ionic 配合 Node.js 实现用户注册、登录、注销简单的系统
 
 14. 先实现客户端首页 HomePage，添加登录表单和注册按钮
+
+15. 创建 signUp 页面，点 Homepage 的注册按钮实现跳转
+
+16. 在 signUp 页面中，添加注册表单
+
+17. 创建文件 server-demo/sql/db.sql，建库建表
+
+18. 使用 Node.js 和 Express 实现一个简单的服务器端
+
+19. 创建目录 server-demo
+
+20. 在 server-demo/ 执行 cmd：npm init 生成 package.json
+
+21. 在 server-demo/ 执行 cmd：npm i -S express mysql body-parser
+
+22. 在 server-demo/ 创建 app.js
+
