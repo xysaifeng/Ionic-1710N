@@ -73,4 +73,6 @@ Ionic Day02
 
 10. 练习：把之前的所有页面改写为 lazy loading
 
-11. serve-demo.zip
+11. 解压 app-components.zip，改目录名为 app-demo，放在 Ionic-1710N/ 下
+
+12. 解压 server-demo.zip，放在 Ionic-1710N/ 下

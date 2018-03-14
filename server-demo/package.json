@@ -1,0 +1,22 @@
+{
+  "name": "server-demo",
+  "version": "1.0.0",
+  "description": "Node.js server demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "ionic",
+    "express"
+  ],
+  "author": "1710N",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0"
+  }
+}
