@@ -15,6 +15,7 @@ import {IonicPage, NavController, NavParams, AlertController} from 'ionic-angula
 })
 export class AlertPage {
 
+  // public protected private
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               private alertCtrl: AlertController) {
@@ -33,5 +34,26 @@ export class AlertPage {
       ]
     });
     alert.present();
+  }
+
+  confirmAlert(): void {
+    this.alertCtrl.create({
+      title: 'Confirm',
+      subTitle: 'Delete this record?',
+      buttons: [
+        {
+          text: 'Ok',
+          handler: () => {
+            console.log('ok');
+          }
+        },
+        {
+          text: 'Cancel',
+          handler: () => {
+            console.log('cancel');
+          }
+        }
+      ]
+    }).present();
   }
 }

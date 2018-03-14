@@ -56,3 +56,5 @@ Ionic Day02
     7.5 DI 依赖注入 AlertController
     7.6 在 basicAlert 中，创建 alert 实例
     7.7 alert.present()，显示警告框
+
+    - 15:45
