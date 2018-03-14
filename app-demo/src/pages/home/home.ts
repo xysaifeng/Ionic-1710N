@@ -11,4 +11,8 @@ export class HomePage {
 
   }
 
+  toSignUpPage():void {
+    this.navCtrl.push('SignUpPage');
+  }
+
 }

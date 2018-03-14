@@ -76,3 +76,7 @@ Ionic Day02
 11. 解压 app-components.zip，改目录名为 app-demo，放在 Ionic-1710N/ 下
 
 12. 解压 server-demo.zip，放在 Ionic-1710N/ 下
+
+13. Ionic 配合 Node.js 实现用户注册、登录、注销简单的系统
+
+14. 先实现客户端首页 HomePage，添加登录表单和注册按钮
