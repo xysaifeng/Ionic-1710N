@@ -32,4 +32,20 @@ export class ToastPage {
     toast.present();
   }
 
+  toastPosition(position: string): void {
+    this.toastCtrl.create({
+      message: '消息显示的位置',
+      duration: 2000,
+      position: position
+    }).present();
+  }
+
+  toastClose(): void {
+    this.toastCtrl.create({
+      message: '可关闭消息提示',
+      // duration
+      showCloseButton: true,
+      closeButtonText: 'Close'
+    }).present();
+  }
 }
