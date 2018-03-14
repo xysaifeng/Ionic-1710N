@@ -62,3 +62,13 @@ Ionic Day02
     8.2 字体属性
     8.3 ios md
     8.4 属性绑定
+
+9. Ionic 3 新特性：lazy loading 懒加载
+    9.1 创建 lazy 页面
+    9.2 修改 home.ts 文件，定义函数:
+        toLazyPage():void {
+            this.navCtrl.push('LazyPage');
+        }
+    9.3 修改 home.html 文件，添加按钮，绑定 tap 事件
+
+10. 练习：把之前的所有改写为 lazy loading

@@ -47,4 +47,8 @@ export class HomePage {
     this.iconPage = IconPage;
   }
 
+  toLazyPage():void {
+    this.navCtrl.push('LazyPage');
+  }
+
 }
