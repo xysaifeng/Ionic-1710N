@@ -10,6 +10,8 @@ import {ButtonPage} from '../pages/button/button';
 import {ListPage} from '../pages/list/list'
 import {CardPage} from '../pages/card/card'
 import {GesturePage} from '../pages/gesture/gesture'
+import {APage} from '../pages/a/a'
+import {BPage} from '../pages/b/b'
 
 @NgModule({
     declarations: [
@@ -18,7 +20,9 @@ import {GesturePage} from '../pages/gesture/gesture'
         ButtonPage,
         ListPage,
         CardPage,
-        GesturePage
+        GesturePage,
+        APage,
+        BPage
     ],
     imports: [
         BrowserModule,
@@ -31,7 +35,9 @@ import {GesturePage} from '../pages/gesture/gesture'
         ButtonPage,
         ListPage,
         CardPage,
-        GesturePage
+        GesturePage,
+        APage,
+        BPage
     ],
     providers: [
         StatusBar,
