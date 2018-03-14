@@ -7,18 +7,17 @@
 </ion-header>
 
 <ion-content>
-  <button [navPush]="buttonPage" ion-button full>button 示例</button>
-  <button [navPush]="listPage" ion-button full>list 示例</button>
-  <button [navPush]="cardPage" ion-button full>card 示例</button>
-  <button [navPush]="gesturePage" ion-button full>gesture 示例</button>
-  <button [navPush]="aPage" ion-button full>A 页面</button>
-  <button [navPush]="fabPage" ion-button full>FAB 示例</button>
-  <button [navPush]="gridPage" ion-button full>grid 示例</button>
-  <button [navPush]="formPage" ion-button full>form 示例</button>
-  <button [navPush]="toastPage" ion-button full>toast 示例</button>
-  <button [navPush]="signInPage" ion-button full>signIn 示例</button>
-  <button [navPush]="alertPage" ion-button full>alert 示例</button>
-  <button [navPush]="iconPage" ion-button full>icon 示例</button>
-
-  <button (tap)="toLazyPage()" ion-button full>Lazy Page</button>
+  <button (tap)="navToPage('ButtonPage')" ion-button full>button 示例</button>
+  <button (tap)="navToPage('ListPage')" ion-button full>list 示例</button>
+  <button (tap)="navToPage('CardPage')" ion-button full>card 示例</button>
+  <button (tap)="navToPage('GesturePage')" ion-button full>gesture 示例</button>
+  <button (tap)="navToPage('APage')" ion-button full>A 页面</button>
+  <button (tap)="navToPage('FabPage')" ion-button full>FAB 示例</button>
+  <button (tap)="navToPage('GridPage')" ion-button full>grid 示例</button>
+  <button (tap)="navToPage('FormPage')" ion-button full>form 示例</button>
+  <button (tap)="navToPage('ToastPage')" ion-button full>toast 示例</button>
+  <button (tap)="navToPage('SignInPage')" ion-button full>signIn 示例</button>
+  <button (tap)="navToPage('AlertPage')" ion-button full>alert 示例</button>
+  <button (tap)="navToPage('IconPage')" ion-button full>icon 示例</button>
+  <button (tap)="navToPage('LazyPage')" ion-button full>Lazy Page</button>
 </ion-content>

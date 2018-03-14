@@ -71,4 +71,6 @@ Ionic Day02
         }
     9.3 修改 home.html 文件，添加按钮，绑定 tap 事件
 
-10. 练习：把之前的所有改写为 lazy loading
+10. 练习：把之前的所有页面改写为 lazy loading
+
+11. serve-demo.zip
