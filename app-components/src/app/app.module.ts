@@ -18,6 +18,7 @@ import {FormPage} from '../pages/form/form';
 import {ToastPage} from "../pages/toast/toast";
 import {SignInPage} from "../pages/sign-in/sign-in";
 import {AlertPage} from "../pages/alert/alert";
+import {IconPage} from "../pages/icon/icon";
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {AlertPage} from "../pages/alert/alert";
     FormPage,
     ToastPage,
     SignInPage,
-    AlertPage
+    AlertPage,
+    IconPage
   ],
   imports: [
     BrowserModule,
@@ -55,7 +57,8 @@ import {AlertPage} from "../pages/alert/alert";
     FormPage,
     ToastPage,
     SignInPage,
-    AlertPage
+    AlertPage,
+    IconPage
   ],
   providers: [
     StatusBar,

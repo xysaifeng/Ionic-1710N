@@ -57,4 +57,8 @@ Ionic Day02
     7.6 在 basicAlert 中，创建 alert 实例
     7.7 alert.present()，显示警告框
 
-    - 15:45
+8. icon 字体图标
+    8.1 创建 icon，从 HomePage 跳向 IconPage
+    8.2 字体属性
+    8.3 ios md
+    8.4 属性绑定
