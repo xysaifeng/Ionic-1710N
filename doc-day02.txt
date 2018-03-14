@@ -33,3 +33,13 @@ Ionic Day02
    4.7 下拉列表
    4.8 滑块
    4.9 开关
+   4.10 提交按钮
+
+5. Toast 提示 吐司
+   5.1 创建 toast，从 HomePage 跳向 ToastPage
+   5.2 在 toast.html 中，添加按钮，绑定 tap 事件
+   5.3 在 toast.ts 中，定义函数 basicToast()
+   5.4 import ToastController 控制器
+   5.5 在构造器 constructor 中，定义参数 toastCtrl: ToastController
+   5.6 在 basitToast 函数中，创建一个 toast 实例
+   5.7 调用 toast.present()，显示消息提示
