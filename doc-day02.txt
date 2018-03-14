@@ -12,3 +12,9 @@ Ionic Day02
 
 2. FAB 浮动操作按钮 Floating Action Button
    2.1 创建 fabPage，从 HomePage 跳向 FabPage
+   2.2 基本
+   2.3 居中
+
+3. grid 栅格系统
+   3.1 创建 grid，从 HomePage 跳向 GridPage
+   3.2

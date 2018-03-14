@@ -7,12 +7,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {ButtonPage} from '../pages/button/button';
-import {ListPage} from '../pages/list/list'
-import {CardPage} from '../pages/card/card'
-import {GesturePage} from '../pages/gesture/gesture'
-import {APage} from '../pages/a/a'
-import {BPage} from '../pages/b/b'
-import {FabPage} from '../pages/fab/fab'
+import {ListPage} from '../pages/list/list';
+import {CardPage} from '../pages/card/card';
+import {GesturePage} from '../pages/gesture/gesture';
+import {APage} from '../pages/a/a';
+import {BPage} from '../pages/b/b';
+import {FabPage} from '../pages/fab/fab';
+import {GridPage} from '../pages/grid/grid';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import {FabPage} from '../pages/fab/fab'
         GesturePage,
         APage,
         BPage,
-        FabPage
+        FabPage,
+        GridPage
     ],
     imports: [
         BrowserModule,
@@ -40,7 +42,8 @@ import {FabPage} from '../pages/fab/fab'
         GesturePage,
         APage,
         BPage,
-        FabPage
+        FabPage,
+        GridPage
     ],
     providers: [
         StatusBar,
