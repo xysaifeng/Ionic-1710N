@@ -41,8 +41,11 @@ Ionic Day02
    5.3 在 toast.ts 中，定义函数 basicToast()
    5.4 import ToastController 控制器
    5.5 在构造器 constructor 中，定义参数 toastCtrl: ToastController
-   5.6 在 basitToast 函数中，创建一个 toast 实例
+   5.6 在 basicToast 函数中，创建一个 toast 实例
    5.7 调用 toast.present()，显示消息提示
+   5.8 基本 toast
+   5.9 指定位置 toast
+   5.10 关闭按钮的 toast
 
 6. 练习：创建一个用户登录页面 signIn
          页面内实现一个登录表单，Email 和 Password
@@ -53,9 +56,11 @@ Ionic Day02
     7.2 在 alert.html 中，创建按钮，绑定 tap 事件
     7.3 在 alert.ts 中，定义函数 basicAlert();
     7.4 引入 AlertController
-    7.5 DI 依赖注入 AlertController
+    7.5 DI 依赖注入构造器中 alertCtrl: AlertController
     7.6 在 basicAlert 中，创建 alert 实例
     7.7 alert.present()，显示警告框
+    7.8 基本 alert
+    7.9 confirm alert
 
 8. icon 字体图标
     8.1 创建 icon，从 HomePage 跳向 IconPage

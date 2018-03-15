@@ -2,11 +2,9 @@ const express = require('express');
 
 let app = new express();
 
-app.post('/signUp', (req, res) => {
-    // todo
+app.get('/', (req, res) => {
+    // ...
+    res.end('It works.');
 });
 
 app.listen(3000);
-
-// Ctrl + Shift + F10
-    

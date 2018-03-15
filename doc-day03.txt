@@ -1,0 +1,18 @@
+WEBAPP
+
+Ionic Day03
+
+1. 在客户端获取用户填写的注册表单值
+
+2. 修改 sign-up.ts 文件，声明属性 user (JS 对象)
+    user = {
+        email:'',
+        password: ''
+    };
+
+3. 修改 sign-up.html 文件，做表单数据的双向绑定
+    [(ngModel)] = 'user.email'
+
+4. 修改 sign-up.html 文件，为提交按钮绑定 tap 事件
+
+5. 修改 sign-up.ts 文件，定义函数 signUp()，验证表单值
