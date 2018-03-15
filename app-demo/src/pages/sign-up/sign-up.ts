@@ -33,7 +33,7 @@ export class SignUpPage {
   signUp(): void {
     console.log(this.user);
     let url = '/signUp';
-    this.httpClient.get(url)
+    this.httpClient.post(url,{email:this.user.email})
       .subscribe(
         res => {
           // 请求成功，接受响应

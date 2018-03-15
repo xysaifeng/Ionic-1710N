@@ -56,3 +56,14 @@ Ionic Day03
     ]
     重启 Ionic 客户端
 
+11. 在 sign-up.ts 中，以 get 方式发送注册请求
+    let url = `/signUp?email=${this.user.email}&password=${this.user.password}`;
+
+12. 在 app.js 中，接收表单数据
+    app.get('/signUp', (req, res) => {
+        let email = req.request.email;
+        let password = req.request.password;
+        console.log(`email: ${email}; password: ${password}`);
+
+        res.send({"status": "ok"});
+    });
