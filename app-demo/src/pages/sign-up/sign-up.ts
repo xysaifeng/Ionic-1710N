@@ -32,7 +32,7 @@ export class SignUpPage {
 
   signUp(): void {
     console.log(this.user);
-    let url = 'http://127.0.0.1:3000/';
+    let url = '/signUp';
     this.httpClient.get(url)
       .subscribe(
         res => {

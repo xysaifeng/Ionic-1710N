@@ -30,7 +30,7 @@ Ionic Day03
     8.2 依赖注入 HttpClient
         constructor(..., private httpClient: HttpClient){}
     8.3 使用 this.httpClient 向服务器端发送各种请求
-        this.httpClient.get('http://127.0.0.1:3000/')
+        this.httpClient.get('/signUp')
             .subscribe(
                 res => {
                     console.log(res);
@@ -39,10 +39,20 @@ Ionic Day03
             );
 
 9. 修改 app.js 文件
-    app.get('/', (req, res) => {
+    app.get('/signUp', (req, res) => {
         // ...
         res.send({"status": "ok"});
     });
 
-10. Ionic 跨域问题？
+10. Ionic 跨域问题
+    修改 app-demo/ionic.config.json 文件
+    添加代理 proxy
+    ,
+    "proxies": [
+        {
+            "path": "/signUp",
+            "proxyUrl": "http://127.0.0.1:3000/signUp"
+        }
+    ]
+    重启 Ionic 客户端
 
