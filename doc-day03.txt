@@ -96,3 +96,16 @@ Ionic Day03
     再次启动服务：
     app-server/ 下，cmd：supervisor app
 
+16. 在 app.js 中处理用户注册请求
+    16.1 const mysql = require('mysql');
+    16.2 let pool = mysql.createPool({user: 'root'});
+    16.3 let sql = 'INSERT INTO db.user VALUE(NULL, ?, ?)';
+    16.4 pool.query(sql, [email, password], (err, results) => {
+            if(err) throw err;
+            if(results.affectedRows === 1) {
+                res.send({"status": "ok"});
+            } else{
+                res.send({"status": "err"});
+            }
+         });
+
