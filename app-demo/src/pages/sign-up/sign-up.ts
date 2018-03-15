@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
 
 /**
  * Generated class for the SignUpPage page.
@@ -33,7 +33,13 @@ export class SignUpPage {
   signUp(): void {
     console.log(this.user);
     let url = '/signUp';
-    this.httpClient.post(url,{email:this.user.email})
+
+    // GET 请求的参数设置方法
+    let params = new HttpParams()
+      .set('email', this.user.email)
+      .set('password', this.user.password);
+
+    this.httpClient.post(url,{email: this.user.email, password: this.user.password})
       .subscribe(
         res => {
           // 请求成功，接受响应
