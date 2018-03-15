@@ -10,9 +10,39 @@ Ionic Day03
         password: ''
     };
 
-3. 修改 sign-up.html 文件，做表单数据的双向绑定
+3. 修改 sign-up.html 文件，做表单数据的双向绑定 two way binding
     [(ngModel)] = 'user.email'
 
 4. 修改 sign-up.html 文件，为提交按钮绑定 tap 事件
 
 5. 修改 sign-up.ts 文件，定义函数 signUp()，验证表单值
+
+6. 从 Ionic 客户端发送注册用户的 HTTP 请求
+
+7. 修改 app.module.ts 文件
+    7.1 加载 HttpClientModule 模块
+        import {HttpClientModule} from '@angular/common/http';
+    7.2 把 HttpClientModule 加入数组 imports
+
+8. 修改 sign-up.ts 文件
+    8.1 加载 HttpClient
+        import {HttpClient} from '@angular/common/http';
+    8.2 依赖注入 HttpClient
+        constructor(..., private httpClient: HttpClient){}
+    8.3 使用 this.httpClient 向服务器端发送各种请求
+        this.httpClient.get('http://127.0.0.1:3000/')
+            .subscribe(
+                res => {
+                    console.log(res);
+                },
+                err => {}
+            );
+
+9. 修改 app.js 文件
+    app.get('/', (req, res) => {
+        // ...
+        res.send({"status": "ok"});
+    });
+
+10. Ionic 跨域问题？
+

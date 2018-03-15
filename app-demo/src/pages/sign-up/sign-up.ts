@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {HttpClient} from '@angular/common/http';
 
 /**
  * Generated class for the SignUpPage page.
@@ -16,19 +17,32 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class SignUpPage {
 
   user = {
-    email:'',
+    email: '',
     password: ''
   };
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              private httpClient: HttpClient) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SignUpPage');
   }
 
-  signUp():void {
+  signUp(): void {
     console.log(this.user);
-    // todo send HTTP request
+    let url = 'http://127.0.0.1:3000/';
+    this.httpClient.get(url)
+      .subscribe(
+        res => {
+          // 请求成功，接受响应
+          console.log(res);
+        },
+        err => {
+          // 请求失败
+          console.error(err);
+        }
+      );
   }
 }
