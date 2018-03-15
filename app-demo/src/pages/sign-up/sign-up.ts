@@ -2,13 +2,6 @@ import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams} from 'ionic-angular';
 import {HttpClient} from '@angular/common/http';
 
-/**
- * Generated class for the SignUpPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-sign-up',
@@ -39,11 +32,16 @@ export class SignUpPage {
     //   .set('email', this.user.email)
     //   .set('password', this.user.password);
 
-    this.httpClient.post(url,{email: this.user.email, password: this.user.password})
+    this.httpClient.post(url, {email: this.user.email, password: this.user.password})
       .subscribe(
         res => {
           // 请求成功，接受响应
-          console.log(res);
+          let status = res['status'];
+          console.log(status);
+          if (status === 'ok') {
+            this.navCtrl.push('HomePage');
+          } else {
+          }
         },
         err => {
           // 请求失败

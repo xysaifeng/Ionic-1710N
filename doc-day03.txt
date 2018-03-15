@@ -109,3 +109,31 @@ Ionic Day03
             }
          });
 
+17. 在 sign-up.ts 中，对响应结果进行解析
+
+18. 把 HomePage 改为 lazy loading
+    18.1 创建 home/home.module.ts
+        import { NgModule } from '@angular/core';
+        import { IonicPageModule } from 'ionic-angular';
+        import { HomePage } from './home';
+
+        @NgModule({
+          declarations: [
+            HomePage,
+          ],
+          imports: [
+            IonicPageModule.forChild(HomePage),
+          ],
+        })
+        export class HomePageModule {}
+    18.2 修改 home.ts
+         import {IonicPage, NavController } from 'ionic-angular';
+         @IonicPage()
+    18.3 修改 app.module.ts
+         删除 HomePage 的引入
+         以及两个数组的 HomePage 元素
+    18.4 修改 app.component.ts
+         删除 HomePage 的引入
+         rootPage:any = 'HomePage';
+
+
