@@ -12,7 +12,16 @@ app.use(bodyParser.json());
 app.post('/signUp', (req, res) => { // 1. 接收请求
     let email = req.body.email;
     let password = req.body.password;
-    let sql = 'INSERT INTO db.user VALUE(NULL, ?, ?)';
+
+    let sql = 'SELECT * FROM db.user WHERE email = ?';
+    pool.query(sql, [email], (err, results) => {
+        if(err) throw err;
+        if (results.length === 1) {
+            res.send({"status":"exist"});
+        }
+    });
+
+    sql = 'INSERT INTO db.user VALUE(NULL, ?, ?)';
     pool.query(sql, [email, password], (err, results) => {
         if (err) throw err;
         if (results.affectedRows === 1) {

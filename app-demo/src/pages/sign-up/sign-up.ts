@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, NavController, NavParams, AlertController, ToastController} from 'ionic-angular';
 import {HttpClient} from '@angular/common/http';
 
 @IonicPage()
@@ -16,7 +16,9 @@ export class SignUpPage {
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
-              private httpClient: HttpClient) {
+              private httpClient: HttpClient,
+              private alertCtrl: AlertController,
+              private toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
@@ -38,9 +40,23 @@ export class SignUpPage {
           // 请求成功，接受响应
           let status = res['status'];
           console.log(status);
+          if (status === 'exist') {
+            this.alertCtrl.create({
+              title: '错误',
+              subTitle: '邮箱已经存在。',
+              buttons: [
+                '确认'
+              ]
+            }).present();
+          }
           if (status === 'ok') {
             this.navCtrl.push('HomePage');
-          } else {
+          }
+          if (status === 'err'){
+            this.toastCtrl.create({
+              message: '服务器错误',
+              duration: 1500
+            }).present();
           }
         },
         err => {

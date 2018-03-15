@@ -110,6 +110,10 @@ Ionic Day03
          });
 
 17. 在 sign-up.ts 中，对响应结果进行解析
+    17.1 let status = res['status'];
+    17.2 status === 'ok',页面跳回到 HomePage
+         this.navCtrl.push('HomePage'); // 参见 18 步操作
+    17.3 status === 'err'，使用 toast 提示服务器错误
 
 18. 把 HomePage 改为 lazy loading
     18.1 创建 home/home.module.ts
@@ -135,5 +139,9 @@ Ionic Day03
     18.4 修改 app.component.ts
          删除 HomePage 的引入
          rootPage:any = 'HomePage';
+
+19. 在 app.js 中，用户注册时，先做验证，验证用户的邮箱是否存在
+    如果存在，返回客户端消息，alert 提示用户邮箱存在，不能使用
+    如果不存在，继续注册，成功后页面跳转回 HomePage
 
 
