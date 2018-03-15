@@ -144,4 +144,23 @@ Ionic Day03
     如果存在，返回客户端消息，alert 提示用户邮箱存在，不能使用
     如果不存在，继续注册，成功后页面跳转回 HomePage
 
+20. 用户登录
+    20.1 home.ts 定义 user = {email:'',password:''};
+    20.2 home.html 数据双向绑定
+    20.3 为登录按钮添加 tap 事件响应
+    20.4 home.ts 中定义函数 signIn();
+    20.5 home.ts 引入 HttpClient
+    20.6 home.ts 依赖注入 HttpClient
+    20.7 ionic.config.json，设置代理
+    20.8 home.ts signIn 中，发送登录请求
+    20.9 app.js 中，接受登录请求
+    20.10 app.js 中，获取表单数据
+    20.11 app.js 中，处理用户登录请求，返回对应的响应
+    20.12 home.ts 中，接收响应结果，根据不同的结果进行处理
+    20.13 创建页面 index，用户登录成功时，跳向 IndexPage
 
+21. 练习：实现用户的注册和登录，注销？
+
+FTP Day03/
+app-project.zip
+server-project.zip

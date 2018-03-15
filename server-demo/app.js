@@ -15,9 +15,9 @@ app.post('/signUp', (req, res) => { // 1. 接收请求
 
     let sql = 'SELECT * FROM db.user WHERE email = ?';
     pool.query(sql, [email], (err, results) => {
-        if(err) throw err;
+        if (err) throw err;
         if (results.length === 1) {
-            res.send({"status":"exist"});
+            res.send({"status": "exist"});
         }
     });
 
@@ -30,8 +30,23 @@ app.post('/signUp', (req, res) => { // 1. 接收请求
             res.send({"status": "err"}); // 3.2 返回响应
         }
     });
-
 });
+
+app.post('/signIn', (req, res) => {
+    let user = req.body.user;
+    let sql = `SELECT * 
+                FROM db.user 
+                WHERE email = ? AND password = ?`;
+    pool.query(sql, [user.email, user.password], (err, results) => {
+        if (err) throw err; // Ctrl + Alt + T
+        if (results.length === 1) {
+            res.send({"status": "ok"});
+        } else {
+            res.send({"status": "err"});
+        }
+    });
+})
+;
 
 app.listen(3000);
 
