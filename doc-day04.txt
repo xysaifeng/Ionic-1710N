@@ -111,3 +111,7 @@ Ionic Day04
 30. app.js，返回一个响应
 
 31. app.js 中，处理注册请求，返回对应的响应
+
+32. 对注册用户的密码进行加密，bcrpytjs
+    32.1 app.js 引入 bcryptjs
+    32.2 对密码进行加密

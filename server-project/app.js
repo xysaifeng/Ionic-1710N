@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
+const bcryptjs = require('bcryptjs');
 
 let pool = mysql.createPool({
     user: 'root'
@@ -15,22 +16,24 @@ app.post('/signUp', (req, res) => {
                 FROM db.user 
                 WHERE email = ?`;
     pool.query(sql, [user.email], (err, results) => {
-        if(err) throw err;
+        if (err) throw err;
         if (results.length === 1) {
             // 邮箱存在
-            res.send({"status":"exist"});
+            res.send({"status": "exist"});
         }
 
         sql = `INSERT INTO 
                 db.user(email, password) 
                 VALUE(?, ?)`;
-        pool.query(sql, [user.email, user.password], (err, results) => {
-           if(err) throw err;
-           if (results.affectedRows === 1) {
-               res.send({"status":"ok"});
-           } else {
-               res.send({"status":"err"});
-           }
+        let encryptedPassword = bcryptjs.hashSync(user.password,
+            bcryptjs.genSaltSync(10));
+        pool.query(sql, [user.email, encryptedPassword], (err, results) => {
+            if (err) throw err;
+            if (results.affectedRows === 1) {
+                res.send({"status": "ok"});
+            } else {
+                res.send({"status": "err"});
+            }
         });
     });
 });
