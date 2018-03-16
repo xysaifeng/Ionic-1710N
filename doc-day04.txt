@@ -115,3 +115,24 @@ Ionic Day04
 32. 对注册用户的密码进行加密，bcrpytjs
     32.1 app.js 引入 bcryptjs
     32.2 对密码进行加密
+         bcryptjs.hashSync(plainPassword,
+         bcryptjs.genSaltSync(10));
+
+33. sign-up.ts 中，解析返回的响应信息，根据不同的结果做处理
+
+34. 如果用户注册成功了，视为登录成功，此时在 Ionic 客户端保存用户信息
+    34.1 app.module.ts 中，引入 IonicStorageModule
+         import {IonicStorageModule} from '@ionic/storage';
+         加入 imports 数组
+         IonicStorageModule.forRoot()
+    34.2 sign-up.ts 中，引入 Storage
+         import {Storage} from '@ionic/storage';
+    34.3 Storage 依赖注入构造器
+    34.4 使用 this.storage 保存用户信息
+         this.storage.set('key', value);
+
+35. 创建页面 signIn，放置登录表单
+
+36. tabs.ts 做判断：用户是否已经登录了
+    a. 登录了，user tab 页中显示登录用户的信息
+    b. 未登录, 跳向登录页面
