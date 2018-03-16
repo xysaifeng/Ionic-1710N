@@ -22,4 +22,11 @@ Ionic Day04
         b. declarations 添加 TestPage
         c. entryComponents 添加 TestPage
 
+3. test 的 tab 页实现 lazy loading
+    3.1 app.module.ts
+        删除 import 和两个数组的元素
+    3.2 tabs.ts
+        a. 删除 import
+        b. tab4Root = 'TestPage';
+
 . 解压 server-project.zip，放在 Ionic-1710N/ 下
