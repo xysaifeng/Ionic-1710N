@@ -5,5 +5,21 @@ Ionic Day04
 1. 解压 app-project.zip，放在 Ionic-1710N/ 下
    app-project 是基于 Ionic tabs 模板创建的空项目
    cmd：ionic start app-project tabs
+   cmd: cd app-project
+   cmd: npm i
+   cmd: ionic serve -l
 
-2. 解压 server-project.zip，放在 Ionic-1710N/ 下
+2. 为 app-project 添加一个新的 tab 页
+    2.1 创建一个新的页面 test
+        app-project/ cmd: ionic g page test
+    2.2 tabs.ts
+        a. import {TestPage} from '../test/test';
+        b. tab4Root = TestPage;
+    2.3 tabs.html
+        <ion-tab [root]="tab4Root" title="test page" tabIcon="heart"></ion-tab>
+    2.4 app.module.ts
+        a. import {TestPage} from '../pages/test/test';
+        b. declarations 添加 TestPage
+        c. entryComponents 添加 TestPage
+
+. 解压 server-project.zip，放在 Ionic-1710N/ 下
