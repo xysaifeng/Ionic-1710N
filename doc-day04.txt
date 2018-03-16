@@ -109,3 +109,5 @@ Ionic Day04
 29. app.js，配置 body-parser 中间件，解析请求的表单数据
 
 30. app.js，返回一个响应
+
+31. app.js 中，处理注册请求，返回对应的响应
