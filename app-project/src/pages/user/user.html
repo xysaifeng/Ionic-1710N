@@ -17,13 +17,13 @@
   <ion-list>
     <ion-item>
       <ion-label floating>邮箱</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="user.email" clearInput></ion-input>
     </ion-item>
     <ion-item>
       <ion-label floating>密码</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input [(ngModel)]="user.password" type="password" clearInput></ion-input>
     </ion-item>
   </ion-list>
-  <button ion-button block color="danger">登录</button>
+  <button ion-button block color="danger" [disabled]="user.email === '' || user.password === ''">登录</button>
   <button (tap)="toSignUpPage()" ion-button block color="light">注册</button>
 </ion-content>

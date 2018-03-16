@@ -84,3 +84,18 @@ Ionic Day04
 17. app-project/ cmd: ionic g page signUp
 
 18. user.ts 中定义函数 toSignUpPage，跳向 SignUpPage
+    this.navCtrl.push('SignUpPage');
+
+19. sign-up.html 实现注册表单，为注册提交按钮绑定 tap 事件
+
+20. sign-up.ts 定义 user = {email: '', password: ''};
+
+21. sign-up.html 表单数据双向绑定
+
+22. sign-up.ts 定义注册提交函数 signUp()
+
+23. app.module.ts 引入 HttpClientModule，加入 imports
+
+24. sign-up.ts 引入 HttpClient
+
+25. Constructor 中 DI HttpClient
