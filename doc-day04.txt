@@ -29,4 +29,40 @@ Ionic Day04
         a. 删除 import
         b. tab4Root = 'TestPage';
 
+4. 删除 pages/ home contact about test 目录
+
+5. tabs.ts
+    a. 删除 import home contact about
+    b. 删除 tab1Root - tab4Root 属性
+
+6. tabs.html 删除所有的 ion-tab 标记
+
+7. app.module.ts
+    删除 home contact about 的 import 和 元素
+
+8. 创建五个页面
+    home(首页)
+    find(发现)
+    cat(分类)
+    cart(购物车)
+    user(个人)
+
+    app-project/ 下 cmd：ionic g page
+
+9. 把五个页面设置为 tab 页
+    9.1 tabs.ts
+        声明属性
+          homePage = 'HomePage';
+          findPage = 'FindPage';
+          catPage = 'CatPage';
+          cartPage = 'CartPage';
+          userPage = 'UserPage';
+    9.2 tabs.html
+          <ion-tab [root]="homePage" tabTitle="首页" tabIcon="home"></ion-tab>
+          <ion-tab [root]="findPage" tabTitle="发现" tabIcon="search"></ion-tab>
+          <ion-tab [root]="catPage" tabTitle="分类" tabIcon="list"></ion-tab>
+          <ion-tab [root]="cartPage" tabTitle="购物车" tabIcon="cart"></ion-tab>
+          <ion-tab [root]="userPage" tabTitle="个人" tabIcon="contact"></ion-tab>
+
+
 . 解压 server-project.zip，放在 Ionic-1710N/ 下
