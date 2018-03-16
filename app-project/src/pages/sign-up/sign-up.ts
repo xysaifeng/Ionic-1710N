@@ -32,6 +32,15 @@ export class SignUpPage {
 
   signUp(): void {
     console.log(this.user);
-    // todo send HTTP request
+    let url = '/signUp';
+    this.httpClient.post(url, {user: this.user})
+      .subscribe(
+        res => {
+          console.log(res);
+        },
+        err => {
+          console.error(err);
+        }
+      );
   }
 }

@@ -99,3 +99,13 @@ Ionic Day04
 24. sign-up.ts 引入 HttpClient
 
 25. Constructor 中 DI HttpClient
+
+26. ionic.config.json 中，设置注册请求的代理
+
+27. sign-up.ts signUp() 中，发送注册请求，接收，输出响应
+
+28. app.js，接受用户注册请求
+
+29. app.js，配置 body-parser 中间件，解析请求的表单数据
+
+30. app.js，返回一个响应
