@@ -24,12 +24,15 @@ app.post('/signUp', (req, res) => {
         sql = `INSERT INTO 
                 db.user(email, password) 
                 VALUE(?, ?)`;
-
+        pool.query(sql, [user.email, user.password], (err, results) => {
+           if(err) throw err;
+           if (results.affectedRows === 1) {
+               res.send({"status":"ok"});
+           } else {
+               res.send({"status":"err"});
+           }
+        });
     });
-
-
-
-    res.send({"status":"ok"});
 });
 
 app.listen(3000);
