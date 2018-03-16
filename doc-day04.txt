@@ -1,0 +1,9 @@
+WEBAPP
+
+Ionic Day04
+
+1. 解压 app-project.zip，放在 Ionic-1710N/ 下
+   app-project 是基于 Ionic tabs 模板创建的空项目
+   cmd：ionic start app-project tabs
+
+2. 解压 server-project.zip，放在 Ionic-1710N/ 下
