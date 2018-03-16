@@ -1,0 +1,15 @@
+DROP DATABASE IF EXISTS db;
+CREATE DATABASE db CHARACTER SET UTF8;
+
+DROP TABLE IF EXISTS db.user;
+CREATE TABLE db.user (
+    id INT AUTO_INCREMENT PRIMARY KEY COMMENT 'id, PK',
+    username VARCHAR(20) UNIQUE COMMENT '用户名 UN',
+    email VARCHAR(255) UNIQUE COMMENT '邮箱 UN',
+    mobile VARCHAR(11) UNIQUE COMMENT '手机号 UN',
+    password VARCHAR(64) NOT NULL COMMENT '密码 NN',
+    avatar VARCHAR(20) DEFAULT 'default.png' COMMENT '头像文件',
+    nick VARCHAR(20) UNIQUE COMMENT '昵称 UN',
+    gender CHAR(2) COMMENT '性别',
+    dob DATE COMMENT '出生日期'
+) COMMENT '用户表';

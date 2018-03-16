@@ -64,5 +64,23 @@ Ionic Day04
           <ion-tab [root]="cartPage" tabTitle="购物车" tabIcon="cart"></ion-tab>
           <ion-tab [root]="userPage" tabTitle="个人" tabIcon="contact"></ion-tab>
 
+10. https://www.iconfont.cn
 
-. 解压 server-project.zip，放在 Ionic-1710N/ 下
+11. 解压 server-project.zip，放在 Ionic-1710N/ 下
+
+12. server-project/sql/db.sql，建库建表
+
+13. server-project/ 下创建文件 app.js，设置简单的服务器端
+    const express = require('express');
+    let app = new express();
+    app.listen(3000);
+
+14. server-project/ cmd: node app | supervisor app
+
+15. 下载 default.png，放在 src/assets/avatars/ 下
+
+16. user.html，创建用户登录表单，和一个注册按钮，绑定 tap 事件
+
+17. app-project/ cmd: ionic g page signUp
+
+18. user.ts 中定义函数 toSignUpPage，跳向 SignUpPage

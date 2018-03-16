@@ -14,5 +14,16 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item>
+      <ion-label floating>邮箱</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>密码</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button block color="danger">登录</button>
+  <button (tap)="toSignUpPage()" ion-button block color="light">注册</button>
 </ion-content>
