@@ -13,3 +13,15 @@ CREATE TABLE db.user (
     gender CHAR(2) COMMENT '性别',
     dob DATE COMMENT '出生日期'
 ) COMMENT '用户表';
+
+DROP TABLE IF EXISTS db.product;
+CREATE TABLE db.product(
+    id INT AUTO_INCREMENT PRIMARY KEY COMMENT 'id, PK',
+    title VARCHAR(255) NOT NULL COMMENT '商品名称 NN',
+    coverPicture VARCHAR(255) NOT NULL COMMENT '封面图片 NN',
+    price DECIMAL(8,2) NOT NULL COMMENT '商品价格 NN',
+    brief VARCHAR(255) COMMENT '商品简介',
+    feature VARCHAR(255) COMMENT '商品特色',
+    tags VARCHAR(255) COMMENT '商品标签',
+    type VARCHAR(255) COMMENT '商品类别'
+) COMMENT '商品表';
