@@ -87,3 +87,17 @@ Ionic Day05
 
 24. user-info.html 中，数据双向绑定
 
+25. 练习：实现用户个人信息的设置 // todo
+
+26. Ionic 组件：infinite-scroll 无限滚动
+
+27. home.html 中，添加列表
+
+28. home.ts 中，定义属性 itmes = [];
+
+29. home.ts 中，constructor 中初始化 items
+
+27. home.html 中，添加 ion-infinite-scroll 组件
+
+28. home.ts 中，定义函数 doInfinite()
+
