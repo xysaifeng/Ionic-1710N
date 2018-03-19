@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {IonicPage, NavController, NavParams, AlertController} from 'ionic-angular';
 import {HttpClient} from "@angular/common/http";
+import {Storage} from '@ionic/storage';
 
 /**
  * Generated class for the SignInPage page.
@@ -18,13 +19,14 @@ export class SignInPage {
 
   user = {
     email: 'tom@tom.com',
-    password: '123'
+    password: '123',
   };
 
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               private httpClient: HttpClient,
-              private alertCtrl: AlertController) {
+              private alertCtrl: AlertController,
+              private storage: Storage) {
   }
 
   ionViewDidLoad() {
@@ -41,14 +43,18 @@ export class SignInPage {
       .subscribe(
         res => {
           let status = res['status'];
-          if(status === 'ok'){
+          if (status === 'ok') {
             // 登录成功
+            // todo save user info in storage
+            this.storage.set('user', res['user']); // ?
+            // todo to UserPage
+            this.navCtrl.push('UserPage');
           }
-          if(status === 'err'){
+          if (status === 'err') {
             // 登录失败
             this.alertCtrl.create({
               title: '还差一点儿',
-              subTitle:'邮箱或密码不对',
+              subTitle: '邮箱或密码不对',
               buttons: [
                 '确认'
               ]

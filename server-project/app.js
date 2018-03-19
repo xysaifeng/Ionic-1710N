@@ -49,7 +49,10 @@ app.post('/signIn', (req, res) => {
         if (results.length === 1) {
             let encryptedPassword = results[0].password;
             if (bcryptjs.compareSync(user.password, encryptedPassword)) {
-                res.send({"status": "ok"});
+                res.send({
+                    "status": "ok",
+                    "user": results[0]
+                });
             }
         }
         res.send({"status": "err"});

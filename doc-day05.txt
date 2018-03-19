@@ -11,7 +11,11 @@ Ionic Day05
     b. private storage: Storage
 
 3. tabs.ts constructor 中，从 storage 中取 user 键对应的值
-    this.storage.get('user');
+    this.storage.get('user').then(value => {
+        if(!value) {
+            this.userPage = 'SignInPage';
+        }
+    });
 
 4. user.ts 中
     a. 定义 user 属性
@@ -37,7 +41,7 @@ Ionic Day05
 12. sign-in.ts 提交登录请求
     12.1 ionic.config.json，添加登录代理
     12.2 引入 HttpClient，依赖注入
-    12.3 this.httpClient 发送登录 post 请求，做响应接受
+    12.3 this.httpClient 发送登录 post 请求，做响应接收
 
 13. app.js 中，添加登录请求的接收
 
@@ -48,3 +52,14 @@ Ionic Day05
 16. sign-in.ts 中，解析响应结果，做对应的处理
     a. 登录成功
     b. 登录失败，alert 提示信息
+
+17. 登录成功
+    17.1 引入 Storage，DI
+    17.2 app.js 中，用户登录成功时，返回数据库查询到的 user
+        res.send({
+            "status": "ok",
+            "user": results[0]
+        });
+
+    17.3 sign-in.ts 中，在 storage 中设置用户信息
+         this.storage.set('user', res['user']);
