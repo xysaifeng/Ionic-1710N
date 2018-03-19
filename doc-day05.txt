@@ -74,3 +74,16 @@ Ionic Day05
     this.navCtrl.push('UserInfoPage');
 
 21. user-info.html，添加个人信息表单
+
+22. user.ts 中，跳向 UserInfoPage 时传递参数 this.user
+    this.navCtrl.push('UserInfoPage', {
+        user: this.uer
+    });
+
+23. user-info.ts 中，接收参数
+    23.1 user:any;
+    23.2 constructor
+         this.user = navParams.get('user');
+
+24. user-info.html 中，数据双向绑定
+

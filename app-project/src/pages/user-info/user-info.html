@@ -17,23 +17,23 @@
   <ion-list>
     <ion-item>
       <ion-avatar>
-        <img src="assets/avatars/default.png">
+        <img src="assets/avatars/{{user.avatar}}">
       </ion-avatar>
     </ion-item>
     <ion-item>
       <ion-label>用户名</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="user.username"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>邮箱</ion-label>
-      <ion-input disabled></ion-input>
+      <ion-input disabled [ngModel]="user.email"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label>昵称</ion-label>
-      <ion-input></ion-input>
+      <ion-input [(ngModel)]="user.nick"></ion-input>
     </ion-item>
     <ion-list-header>性别</ion-list-header>
-    <ion-list radio-group>
+    <ion-list radio-group [(ngModel)]="user.gender">
       <ion-item>
         <ion-label>男</ion-label>
         <ion-radio value="男"></ion-radio>
@@ -45,7 +45,7 @@
     </ion-list>
     <ion-item>
       <ion-label>出生日期</ion-label>
-      <ion-datetime displayFormat="YYYY-MM-DD"></ion-datetime>
+      <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="user.dob"></ion-datetime>
     </ion-item>
   </ion-list>
 

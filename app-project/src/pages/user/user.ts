@@ -45,6 +45,6 @@ export class UserPage {
   }
 
   toUserInfoPage():void {
-    this.navCtrl.push('UserInfoPage');
+    this.navCtrl.push('UserInfoPage', {user: this.user});
   }
 }
