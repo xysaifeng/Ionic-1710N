@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Storage} from '@ionic/storage';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -11,11 +12,15 @@ export class TabsPage {
   cartPage = 'CartPage';
   userPage = 'UserPage';
 
-  constructor() {
+  constructor(private storage: Storage) {
     // SQLite
-
     // 从 storage 中提取信息 user
-    // user 存在，显示 UserPage
-    // user 不存在 this.userPage = 'SignInPage';
+    this.storage.get('user').then(value => {
+      // user 存在，显示 UserPage
+      // user 不存在 this.userPage = 'SignInPage';
+      if(!value) {
+        this.userPage = 'SignInPage';
+      }
+    });
   }
 }

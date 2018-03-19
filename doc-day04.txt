@@ -71,8 +71,9 @@ Ionic Day04
 12. server-project/sql/db.sql，建库建表
 
 13. server-project/ 下创建文件 app.js，设置简单的服务器端
-    const express = require('express');
-    let app = new express();
+    // const express = require('express');
+    // let app = new express();
+    let app = new require('express')();
     app.listen(3000);
 
 14. server-project/ cmd: node app | supervisor app
@@ -131,7 +132,7 @@ Ionic Day04
     34.4 使用 this.storage 保存用户信息
          this.storage.set('key', value);
 
-35. 创建页面 signIn，放置登录表单
+35. 创建页面 signIn，放置登录表单，注册按钮
 
 36. tabs.ts 做判断：用户是否已经登录了
     a. 登录了，user tab 页中显示登录用户的信息

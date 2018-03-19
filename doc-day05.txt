@@ -1,0 +1,14 @@
+WEBAPP
+
+Ionic Day05
+
+1. tabs.ts 做判断：用户是否已经登录了
+    a. 登录了，user tab 页中显示登录用户的信息
+    b. 未登录, 跳向登录页面
+
+2. tabs.ts 中，引入 Storage，依赖注入 constructor
+    a. import {Storage} from '@ionic/storage';
+    b. private storage: Storage
+
+3. tabs.ts constructor 中，从 storage 中取 user 键对应的值
+    this.storage.get('user');
