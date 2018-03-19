@@ -7,12 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>user</ion-title>
+    <ion-title>我的</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  user page
+  <ion-list no-lines>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/avatars/{{user.avatar}}">
+      </ion-avatar>
+      <h2>Email：{{user.email}}</h2>
+      <button ion-button color="light">设置</button>
+    </ion-item>
+  </ion-list>
+  <button ion-button block>注销</button>
 </ion-content>

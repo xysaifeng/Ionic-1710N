@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {Component} from '@angular/core';
+import {IonicPage, NavController, NavParams} from 'ionic-angular';
+import {Storage} from '@ionic/storage';
 
 /**
  * Generated class for the UserPage page.
@@ -15,11 +16,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class UserPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  user = {
+    email: '',
+    // password: '',
+    avatar: ''
+  };
+
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              private storage: Storage) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad UserPage');
+  ionViewDidLoad() { // ionic 视图加载完成
+    this.init();
   }
 
+  init(): void {
+    this.storage.get('user').then(value => {
+      if (value) {
+        this.user = value;
+      }
+    });
+  }
 }

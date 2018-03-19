@@ -12,3 +12,10 @@ Ionic Day05
 
 3. tabs.ts constructor 中，从 storage 中取 user 键对应的值
     this.storage.get('user');
+
+4. user.ts 中
+    a. 定义 user 属性
+    b. ionViewDidLoad 中，从 storage 取出 user，赋值给 this.user
+    c. ionViewDidLoad，Ionic 页面生命周期函数之一
+
+5. user.html 中，显示用户的基本信息：avatar / email
