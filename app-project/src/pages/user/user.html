@@ -20,8 +20,8 @@
         <img src="assets/avatars/{{user.avatar}}">
       </ion-avatar>
       <h2>Email：{{user.email}}</h2>
-      <button ion-button color="light">设置</button>
+      <button clear ion-button>设置</button>
     </ion-item>
   </ion-list>
-  <button ion-button block>注销</button>
+  <button (tap)="signOut()" ion-button block color="light">注销</button>
 </ion-content>

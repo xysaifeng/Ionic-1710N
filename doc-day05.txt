@@ -19,3 +19,32 @@ Ionic Day05
     c. ionViewDidLoad，Ionic 页面生命周期函数之一
 
 5. user.html 中，显示用户的基本信息：avatar / email
+
+6. user.html 中，为注销绑定事件函数 (tap)="signOut()"
+
+7. user.ts 中，定义 signOut()
+    this.storage.clear();
+    this.navCtrl.push('SignInPage');
+
+8. 用户登录
+
+9. sign-in.ts 定义 user
+
+10. sign-in.html 表单数据双向绑定，为登录提交绑定事件
+
+11. sign-in.ts 定义 signIn 函数
+
+12. sign-in.ts 提交登录请求
+    12.1 ionic.config.json，添加登录代理
+    12.2 引入 HttpClient，依赖注入
+    12.3 this.httpClient 发送登录 post 请求，做响应接受
+
+13. app.js 中，添加登录请求的接收
+
+14. 登录请求的处理
+
+15. 返回合适的响应
+
+16. sign-in.ts 中，解析响应结果，做对应的处理
+    a. 登录成功
+    b. 登录失败，alert 提示信息

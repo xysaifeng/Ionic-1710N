@@ -24,6 +24,6 @@
       <ion-input [(ngModel)]="user.password" type="password" clearInput></ion-input>
     </ion-item>
   </ion-list>
-  <button ion-button block color="danger" [disabled]="user.email === '' || user.password === ''">登录</button>
+  <button ion-button (tap)="signIn()" block color="danger" [disabled]="user.email === '' || user.password === ''">登录</button>
   <button (tap)="toSignUpPage()" ion-button block color="light">注册</button>
 </ion-content>

@@ -38,4 +38,22 @@ app.post('/signUp', (req, res) => {
     });
 });
 
+app.post('/signIn', (req, res) => {
+    let user = req.body.user;
+    let sql = `SELECT * 
+                FROM db.user 
+                WHERE email = ?`;
+
+    pool.query(sql, [user.email], (err, results) => {
+        if (err) throw err;
+        if (results.length === 1) {
+            let encryptedPassword = results[0].password;
+            if (bcryptjs.compareSync(user.password, encryptedPassword)) {
+                res.send({"status": "ok"});
+            }
+        }
+        res.send({"status": "err"});
+    });
+});
+
 app.listen(3000);

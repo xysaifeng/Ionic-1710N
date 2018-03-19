@@ -38,4 +38,9 @@ export class UserPage {
       }
     });
   }
+
+  signOut():void {
+    this.storage.clear();
+    this.navCtrl.push('SignInPage');
+  }
 }
