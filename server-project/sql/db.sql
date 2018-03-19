@@ -25,3 +25,24 @@ CREATE TABLE db.product(
     tags VARCHAR(255) COMMENT '商品标签',
     type VARCHAR(255) COMMENT '商品类别'
 ) COMMENT '商品表';
+
+-- 添加样本数据
+
+DROP PROCEDURE IF EXISTS db.gen_product_sample_data;
+DELIMITER $$
+CREATE PROCEDURE db.gen_product_sample_data()
+    BEGIN
+        DECLARE counter INT DEFAULT 1;
+        WHILE counter < 1001 DO
+            INSERT INTO
+                db.product(title, coverPicture, price)
+                VALUE(
+                    CONCAT('商品名称：', counter),
+                    'default.png',
+                    FLOOR(RAND() * 100000)
+                );
+            SET counter = counter + 1;
+        END WHILE;
+    END $$
+
+CALL db.gen_product_sample_data();
