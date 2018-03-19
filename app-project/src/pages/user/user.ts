@@ -43,4 +43,8 @@ export class UserPage {
     this.storage.clear();
     this.navCtrl.push('SignInPage');
   }
+
+  toUserInfoPage():void {
+    this.navCtrl.push('UserInfoPage');
+  }
 }

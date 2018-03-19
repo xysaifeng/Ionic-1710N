@@ -63,3 +63,14 @@ Ionic Day05
 
     17.3 sign-in.ts 中，在 storage 中设置用户信息
          this.storage.set('user', res['user']);
+
+18. 创建用户个人信息页面
+    app-project/ 下，cmd: ionic g page userInfo
+
+19. user.html 中，为设置按钮添加点击事件
+    (tap)="toUserInfoPage()";
+
+20. user.ts 中，定义 toUserInfoPage
+    this.navCtrl.push('UserInfoPage');
+
+21. user-info.html，添加个人信息表单
