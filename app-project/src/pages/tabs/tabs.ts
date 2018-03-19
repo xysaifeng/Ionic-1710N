@@ -12,6 +12,8 @@ export class TabsPage {
   userPage = 'UserPage';
 
   constructor() {
+    // SQLite
+
     // 从 storage 中提取信息 user
     // user 存在，显示 UserPage
     // user 不存在 this.userPage = 'SignInPage';
